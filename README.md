@@ -37,9 +37,9 @@ Lessons Learned:
 
 ## Usage
 
-Launch live site at [https://vinniewaan.github.io/code-refractor-main/](https://vinniewaan.github.io/code-refractor-main/) 
+Launch live site at [https://vinniewaan.github.io/03-password-generator/](https://vinniewaan.github.io/03-password-generator/) 
 
-![Home Page Screenshot](assets/images/Home-page-screenshot.png)
+![Home Page Screenshot](assets/03-javascript-homework-demo.png)
 
 ## Credits
 
