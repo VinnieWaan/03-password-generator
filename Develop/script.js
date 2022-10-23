@@ -71,6 +71,26 @@ if (poolOfChars.length === 0) {
   return;
 }
 
+// 6. Gives a random integer ranging from min to max
+function randomInt(min, max) {
+  //if "max" is not defined, assume we want range from 0 to min
+  if (!max) {
+    max = min;
+    min = 0;
+  }
+  //Interpolate random value. Interpolation is a process of calculating values based on known values.
+  var rand = Math.random();
+    return Math.floor(min*(1 - rand) + rand*max);
+
+}
+
+// 7. Gives a random position in a list
+function getRandomItem(list) {
+  return list[randomInt(list.length)];
+}
+
+
+
 // 5. Created a finalPassword variable with an open value. 
 let finalPassword = '';
 for (var i = 0; i < passwordLength; i++) {
