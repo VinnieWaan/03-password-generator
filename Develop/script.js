@@ -1,7 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// 1. Created generatedPassword function 
+// 1. Created generatePassword function 
 function generatePassword () {
   
   //If the "OK" is clicked, it will return a true value. As long as it is truthy, the code continues.
@@ -30,6 +30,11 @@ function generatePassword () {
     }
 }
 
+// 2. .confirm allows "OK" and "Cancel". Created a variable for the questions. 
+let numericChar = window.confirm("Click OK to confirm including numeric characters.");
+let specChar = window.confirm("Click OK to confirm including special characters.");
+let lowercase = window.confirm("Click OK to confirm including lowercase characters.");
+let uppercase = window.confirm("Click OK to confirm including uppercase characters.");
 
 
 }
