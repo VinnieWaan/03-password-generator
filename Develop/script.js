@@ -111,7 +111,12 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+   //Allows "Your Secure Password" or the generated password to remain in the text area. 
+  // Otherwise "undifined" would render.
+  if (password) {
+    passwordText.value = password;
+  }
+
 
 }
 
