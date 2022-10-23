@@ -89,8 +89,6 @@ function getRandomItem(list) {
   return list[randomInt(list.length)];
 }
 
-
-
 // 5. Created a finalPassword variable with an open value. 
 let finalPassword = '';
 for (var i = 0; i < passwordLength; i++) {
