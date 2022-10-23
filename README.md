@@ -39,7 +39,7 @@ Lessons Learned:
 
 Launch live site at [https://vinniewaan.github.io/03-password-generator/](https://vinniewaan.github.io/03-password-generator/) 
 
-![Home Page Screenshot](assets/03-javascript-homework-demo.png)
+![Home Page Screenshot](Assets/03-javascript-homework-demo.png)
 
 ## Credits
 
