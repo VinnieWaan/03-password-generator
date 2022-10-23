@@ -44,6 +44,37 @@ const alphaUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", 
 
 }
 
+// 4. poolOfChars stores the character type(s) the user selects.
+var poolOfChars = [];
+
+//If user clicks "OK", .push appends number type to poolOfChars.
+if (numericChar){
+  poolOfChars.push(number);
+}
+
+//If user clicks "OK", .push appends specialChar type to poolOfChars.
+if (specChar){
+  poolOfChars.push(specialChar);
+}
+
+//If user clicks "OK", .push appends alphaLower type to poolOfChars.
+if (lowercase){
+poolOfChars.push(alphaLower);
+}
+
+//If user clicks "OK", .push appends alphaUpper type to poolOfChars.
+if (uppercase){
+  poolOfChars.push(alphaUpper);
+}
+
+//If user clicks "Cancel" to all the option type, it will default to alphaLower.
+if (poolOfChars.length === 0) {
+  window.alert("Select at least one character type!");
+  return;
+}
+
+
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
