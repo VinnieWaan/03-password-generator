@@ -42,8 +42,6 @@ const specialChar = ["!", "%", "&", ",", "*", "+", "-", ".", "/", "<", ">", "?",
 const alphaLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 const alphaUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
-}
-
 // 4. poolOfChars stores the character type(s) the user selects.
 var poolOfChars = [];
 
@@ -73,7 +71,20 @@ if (poolOfChars.length === 0) {
   return;
 }
 
+// 5. Created a finalPassword variable with an open value. 
+let finalPassword = '';
+for (var i = 0; i < passwordLength; i++) {
+      
+  //randomList compiles the selected character types stored in poolOfChars.
+  var randomList = getRandomItem(poolOfChars);
+  //randomChar compiles the individual characters stored in randomList.
+  var randomChar = getRandomItem(randomList);
+  //Append randomChar to finalPassword on one line.
+  finalPassword += randomChar;
+} 
+return finalPassword;
 
+}
 
 // Write password to the #password input
 function writePassword() {
